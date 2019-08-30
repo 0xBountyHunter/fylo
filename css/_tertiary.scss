@@ -1,6 +1,14 @@
 .tertiary {
     padding: 2rem;
     margin: 0 auto 5rem;
+    max-width: var(--measure);
+    @media screen and (min-width: $bp-md) {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        max-width: calc(var(--measure) * 3);
+        align-items: center;
+        justify-items: center;
+    }
     &__heading {
         font-size: (var(--s1));
         margin-bottom: 1rem;
@@ -11,10 +19,13 @@
         &__div {
             width: 80%;
             margin: 0 auto 2rem;
+
         }
     }
     &__para {
         margin-bottom: 1rem;
+        max-width: var(--measure);
+        
     }
     &__cta {
         color: hsl(198, 60%, 50%);

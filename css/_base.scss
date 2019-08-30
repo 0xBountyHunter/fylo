@@ -17,6 +17,8 @@
     --color-white: #fff;
 
 }
+$bp-sm: 800px;
+$bp-md : 1200px;
 
 body {
     background: hsl(218, 28%, 13%);
@@ -25,5 +27,12 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    
+}
+
+html {
     font-size: 14px;
+    @media screen and (min-width: $bp-sm) {
+        font-size: 110%;
+    }
 }

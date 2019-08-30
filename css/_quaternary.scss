@@ -1,6 +1,11 @@
 .quaternary {
     padding: 1rem;
     margin: 0 auto 5rem;
+    @media screen and (min-width: $bp-md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: calc(var(--measure)*2.5);
+    }
     &__card {
         background: hsl(219, 30%, 18%);
         border-radius: .5rem;

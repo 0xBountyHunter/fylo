@@ -1,5 +1,12 @@
 .footer {
     padding: 2rem;
+    margin: 0 auto;
+    max-width: calc(var(--measure)*2);
+    @media screen and (min-width: $bp-md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
     a {
         text-decoration: none;
         color: var(--color-white);
@@ -8,6 +15,7 @@
         display: flex;
         align-items: flex-start;
         margin-bottom: 1rem;
+        max-width: var(--measure);
     }
     &__logo {
         margin-right: 1rem;
@@ -19,7 +27,7 @@
         &__list {
             margin: 3rem 0;
             &__item {
-                margin-bottom: 1rem;
+                margin-bottom: 0.5rem;
                 list-style-type: none;
             }
         }

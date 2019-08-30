@@ -1,10 +1,19 @@
 .secondary {
     padding: 2rem;
     margin: 0 auto 5rem;
+    
+    @media screen and (min-width: $bp-md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: calc(var(--measure)*2);
+    }
     &__sub {
+        width: 20rem;
         margin: 0 auto 5rem;
         text-align: center;
+        
         .icon {
+            height: 5.5rem;
         }
         &__heading {
             font-size: calc(var(--s1) - .3rem);

@@ -5,6 +5,8 @@
         border-radius: .5rem;
         background-color: hsl(219, 30%, 18%);
         padding: 2rem;
+        margin: 0 auto;
+        max-width: calc(var(--measure) *1.25);
     }
     &__heading {
         text-align: center;
@@ -15,18 +17,20 @@
         margin-bottom: 2.5rem;
     }
     &__email {
-        width: 100%;
+        display: block;
+        margin: 0 auto 1.5rem;
+        width: 17.5rem;
         padding: 1rem;
         border: none;
         border-radius: 2rem;
-        margin-bottom: 1.5rem;
     }
     &__cta {
+        margin: 0 auto;
         text-decoration: none;
         font-weight: 700;
         text-align: center;
         color: var(--color-white);
-        width: 100%;
+        width: 17.5rem;
         display: block;
         padding: 1rem;
         border-radius: 2rem;
