@@ -1,0 +1,14 @@
+.tertiary {
+    padding: 1rem;
+    &__img {
+        width: 100%;
+        display: block;
+        &__div {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    &__para {
+        margin-bottom: 1rem;
+    }
+}

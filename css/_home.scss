@@ -1,0 +1,40 @@
+.main {
+    .home {
+        margin: 2.5rem auto 5rem;
+        padding: 1rem;
+        max-width: var(--measure);
+        &__img {
+            &__div {
+                width: 80%;
+                margin: 0 auto 2rem;
+            }
+            width: 100%;
+            display: block;
+        }
+
+        &__heading {
+            font-size: var(--s2);
+            text-align: center;
+            font-family: 'Raleway',sans-serif;
+            line-height: 1.25;
+            margin-bottom: 1.5rem;
+        }
+        &__para {
+            text-align: center;
+        }
+        &__cta {
+            margin: 2rem auto 0;
+            display: block;
+            width: 20rem;
+            padding: 1.25rem;
+            text-decoration: none;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            color: var(--color-white);
+            font-size: 700;
+            border-radius: 2rem;
+            background: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+        }
+    }
+
+}

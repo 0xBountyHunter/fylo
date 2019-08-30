@@ -1,0 +1,21 @@
+.header {
+    &__nav {
+        margin: 1rem;
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &--logo {
+                width: 60px;
+            }
+            &--item {
+                list-style-type: none;
+
+            }
+            &--action {
+                text-decoration: none;
+                color: var(--color-white);
+            }
+        }
+    }
+}

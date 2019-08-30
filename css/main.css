@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --measure: 60ch;
+  --ratio: 1.5;
+  --s0: 1rem;
+  --s1: calc(var(--s0)*var(--ratio));
+  --s2: calc(var(--s1)*var(--ratio));
+  --s3: calc(var(--s2)*var(--ratio));
+  --s4: calc(var(--s3)*var(--ratio));
+  --s5: calc(var(--s4)*var(--ratio));
+  --color-white: #fff;
+}
+
+body {
+  background: #181f2a;
+  color: var(--color-white);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.header__nav {
+  margin: 1rem;
+}
+
+.header__nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav__list--logo {
+  width: 60px;
+}
+
+.header__nav__list--item {
+  list-style-type: none;
+}
+
+.header__nav__list--action {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.main .home {
+  margin: 2.5rem auto 5rem;
+  padding: 1rem;
+  max-width: var(--measure);
+}
+
+.main .home__img {
+  width: 100%;
+  display: block;
+}
+
+.main .home__img__div {
+  width: 80%;
+  margin: 0 auto 2rem;
+}
+
+.main .home__heading {
+  font-size: var(--s2);
+  text-align: center;
+  font-family: 'Raleway',sans-serif;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}
+
+.main .home__para {
+  text-align: center;
+}
+
+.main .home__cta {
+  margin: 2rem auto 0;
+  display: block;
+  width: 20rem;
+  padding: 1.25rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: var(--color-white);
+  font-size: 700;
+  border-radius: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(90deg, #65e2d9, #339ecc);
+}
+
+.secondary {
+  padding: 1rem;
+  margin: 0 auto 5rem;
+}
+
+.secondary__sub {
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.tertiary {
+  padding: 1rem;
+}
+
+.tertiary__img {
+  width: 100%;
+  display: block;
+}
+
+.tertiary__img__div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tertiary__para {
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
