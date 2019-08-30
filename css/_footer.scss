@@ -1,16 +1,27 @@
+.foot {
+    background-color: hsl(216, 53%, 9%);
+    margin-top: -2rem;
+}
+
 .footer {
-    padding: 2rem;
+    padding: 5rem 0 3rem;
     margin: 0 auto;
+    color: var(--color-grey);
     max-width: calc(var(--measure)*2);
+    
     @media screen and (min-width: $bp-md) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 30%;
         justify-content: space-between;
     }
+
     a {
+                
         text-decoration: none;
-        color: var(--color-white);
+        color: var(--color-grey);
+    
     }
+    
     &__item {
         display: flex;
         align-items: flex-start;
@@ -25,11 +36,12 @@
     }
     &__nav {
         &__list {
-            margin: 3rem 0;
+            margin: 3rem 5rem 0 3rem;
             &__item {
                 margin-bottom: 0.5rem;
                 list-style-type: none;
             }
+            
         }
     }
 }

@@ -16,6 +16,7 @@
         flex-direction: column;
         font-size: 0.8rem;
         line-height: var(--s1);
+        color: var(--color-grey);
         &__flex-div {
             display: flex;
             align-items: flex-start;
@@ -35,6 +36,7 @@
         &__name {
             font-size: .8rem;
             font-weight: 700;
+            color: var(--color-white);
         }
         &__title {
             margin-top: .6rem;

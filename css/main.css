@@ -15,10 +15,10 @@
   --s4: calc(var(--s3)*var(--ratio));
   --s5: calc(var(--s4)*var(--ratio));
   --color-white: #fff;
+  --color-grey: #ccc;
 }
 
 body {
-  background: #181f2a;
   color: var(--color-white);
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
@@ -27,6 +27,7 @@ body {
 }
 
 html {
+  background: #1c2431;
   font-size: 14px;
 }
 
@@ -40,20 +41,26 @@ html {
   margin: 0 auto;
   max-width: calc(var(--measure) * 2);
   padding: 1rem;
+  background-color: #1c2431;
 }
 
 .header__nav {
   margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__nav__logo {
   width: 4rem;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 1200px) {
   .header__nav__logo {
-    width: 100%;
+    width: 10rem;
   }
 }
 
@@ -76,13 +83,14 @@ html {
 
 .header__nav__list--action {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-grey);
 }
 
 .main .home {
   margin: 0rem auto 5rem;
   padding: 2rem;
   max-width: var(--measure);
+  background-color: #1c2431;
 }
 
 .main .home__img {
@@ -110,6 +118,7 @@ html {
 
 .main .home__para {
   text-align: center;
+  color: var(--color-grey);
 }
 
 .main .home__cta {
@@ -157,10 +166,16 @@ html {
   margin-bottom: .5rem;
 }
 
+.secondary__sub__para {
+  color: var(--color-grey);
+}
+
 .tertiary {
   padding: 2rem;
   margin: 0 auto 5rem;
   max-width: var(--measure);
+  background: #181f2a;
+  border-radius: 1rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -174,6 +189,7 @@ html {
         -ms-flex-align: center;
             align-items: center;
     justify-items: center;
+    border-radius: 0;
   }
 }
 
@@ -195,21 +211,41 @@ html {
 .tertiary__para {
   margin-bottom: 1rem;
   max-width: var(--measure);
+  color: var(--color-grey);
 }
 
-.tertiary__cta {
+.tertiary__cta:link, .tertiary__cta:visited {
   color: #339ecc;
-  text-decoration: none;
   position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 
-.tertiary__cta::after {
+.tertiary__cta:link::after, .tertiary__cta:visited::after {
   position: absolute;
-  height: 2px;
-  width: 10rem;
-  background: #339ecc;
-  bottom: -1rem;
-  right: 0;
+  content: "";
+  border-bottom: 2px solid #339ecc;
+  left: 0;
+  top: 100%;
+  width: 100%;
+}
+
+.tertiary__cta:hover, .tertiary__cta:active {
+  color: #ae57ff;
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.tertiary__cta:hover::after, .tertiary__cta:active::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ae57ff;
+  left: 0;
+  top: 100%;
+  width: 100%;
 }
 
 .quaternary {
@@ -242,6 +278,7 @@ html {
           flex-direction: column;
   font-size: 0.8rem;
   line-height: var(--s1);
+  color: var(--color-grey);
 }
 
 .quaternary__card__flex-div {
@@ -273,6 +310,7 @@ html {
 .quaternary__card__name {
   font-size: .8rem;
   font-weight: 700;
+  color: var(--color-white);
 }
 
 .quaternary__card__title {
@@ -282,7 +320,7 @@ html {
 
 .quinary {
   padding: 1rem;
-  margin: 0 0 2rem;
+  margin: 0 0 5rem;
 }
 
 .quinary__card {
@@ -301,6 +339,7 @@ html {
 .quinary__para {
   text-align: center;
   margin-bottom: 2.5rem;
+  color: var(--color-grey);
 }
 
 .quinary__email {
@@ -326,9 +365,15 @@ html {
   background: linear-gradient(90deg, #65e2d9, #339ecc);
 }
 
+.foot {
+  background-color: #0b1523;
+  margin-top: -2rem;
+}
+
 .footer {
-  padding: 2rem;
+  padding: 5rem 0 3rem;
   margin: 0 auto;
+  color: var(--color-grey);
   max-width: calc(var(--measure)*2);
 }
 
@@ -336,8 +381,8 @@ html {
   .footer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 30%;
+        grid-template-columns: 1fr 30%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -346,7 +391,7 @@ html {
 
 .footer a {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-grey);
 }
 
 .footer__item {
@@ -369,7 +414,7 @@ html {
 }
 
 .footer__nav__list {
-  margin: 3rem 0;
+  margin: 3rem 5rem 0 3rem;
 }
 
 .footer__nav__list__item {

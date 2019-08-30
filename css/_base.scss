@@ -15,22 +15,23 @@
     --s4: calc(var(--s3)*var(--ratio));
     --s5: calc(var(--s4)*var(--ratio));
     --color-white: #fff;
+    --color-grey: #ccc;
 
 }
 $bp-sm: 800px;
 $bp-md : 1200px;
 
 body {
-    background: hsl(218, 28%, 13%);
+    
     color: var(--color-white);
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    
 }
 
 html {
+    background: hsl(217, 28%, 15%);
     font-size: 14px;
     @media screen and (min-width: $bp-sm) {
         font-size: 110%;

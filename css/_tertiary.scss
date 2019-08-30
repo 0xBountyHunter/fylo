@@ -2,12 +2,15 @@
     padding: 2rem;
     margin: 0 auto 5rem;
     max-width: var(--measure);
+    background: hsl(218, 28%, 13%);
+    border-radius: 1rem;
     @media screen and (min-width: $bp-md) {
         display: grid;
         grid-template-columns:  1fr 1fr;
         max-width: calc(var(--measure) * 3);
         align-items: center;
         justify-items: center;
+        border-radius: 0;
     }
     &__heading {
         font-size: (var(--s1));
@@ -25,19 +28,35 @@
     &__para {
         margin-bottom: 1rem;
         max-width: var(--measure);
-        
+        color: var(--color-grey);
     }
-    &__cta {
+    &__cta:link, &__cta:visited {
         color: hsl(198, 60%, 50%);
-        text-decoration: none;
         position: relative;
+        text-decoration: none;
+        font-weight: 700;
+        transition: color .3s;
         &::after {
             position: absolute;
-            height: 2px;
-            width: 10rem;
-            background: hsl(198, 60%, 50%);
-            bottom: -1rem;
-            right: 0;
+            content: "";
+            border-bottom: 2px solid hsl(198, 60%, 50%);
+            left: 0;
+            top: 100%;
+            width: 100%;
+        }
+    }
+    &__cta:hover, &__cta:active {
+        color: #ae57ff;
+        position: relative;
+        text-decoration: none;
+        font-weight: 700;
+        &::after {
+            position: absolute;
+            content: "";
+            border-bottom: 2px solid #ae57ff;
+            left: 0;
+            top: 100%;
+            width: 100%;
         }
     }
 }
