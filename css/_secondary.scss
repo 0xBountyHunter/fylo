@@ -1,14 +1,14 @@
 .secondary {
-    padding: 1rem;
+    padding: 2rem;
     margin: 0 auto 5rem;
     &__sub {
-        margin: 0 auto 2rem;
+        margin: 0 auto 5rem;
         text-align: center;
         .icon {
-
         }
         &__heading {
-
+            font-size: calc(var(--s1) - .3rem);
+            margin-bottom: .5rem;
         }
         &__para {
 

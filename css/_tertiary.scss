@@ -1,14 +1,32 @@
 .tertiary {
-    padding: 1rem;
+    padding: 2rem;
+    margin: 0 auto 5rem;
+    &__heading {
+        font-size: (var(--s1));
+        margin-bottom: 1rem;
+    }
     &__img {
         width: 100%;
         display: block;
         &__div {
             width: 80%;
-            margin: 0 auto;
+            margin: 0 auto 2rem;
         }
     }
     &__para {
         margin-bottom: 1rem;
+    }
+    &__cta {
+        color: hsl(198, 60%, 50%);
+        text-decoration: none;
+        position: relative;
+        &::after {
+            position: absolute;
+            height: 2px;
+            width: 10rem;
+            background: hsl(198, 60%, 50%);
+            bottom: -1rem;
+            right: 0;
+        }
     }
 }

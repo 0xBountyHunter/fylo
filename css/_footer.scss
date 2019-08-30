@@ -1,0 +1,27 @@
+.footer {
+    padding: 2rem;
+    a {
+        text-decoration: none;
+        color: var(--color-white);
+    }
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+    &__logo {
+        margin-right: 1rem;
+        &--main {
+            margin-bottom: 2rem;
+        }
+    }
+    &__nav {
+        &__list {
+            margin: 3rem 0;
+            &__item {
+                margin-bottom: 1rem;
+                list-style-type: none;
+            }
+        }
+    }
+}

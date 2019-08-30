@@ -1,14 +1,17 @@
 .header {
     &__nav {
         margin: 1rem;
+        &__logo {
+            width: 4rem;
+            margin-right: auto;
+        }
         &__list {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            &--logo {
-                width: 60px;
-            }
+            
             &--item {
+                margin-left: 2rem;
                 list-style-type: none;
 
             }
